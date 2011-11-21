@@ -32,12 +32,34 @@
     <DocumentationFile>bin\Release\NQUnit.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>NQUnit.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="htmlunit-2.9">
+      <HintPath>..\..\..\..\..\htmlunit-2.9\htmlunit-2.9.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\..\..\..\..\ikvm-0.46.0.1\bin\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\..\..\..\..\ikvm-0.46.0.1\bin\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\..\..\..\..\ikvm-0.46.0.1\bin\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\..\..\..\..\ikvm-0.46.0.1\bin\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\..\..\..\..\ikvm-0.46.0.1\bin\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\..\..\..\..\ikvm-0.46.0.1\bin\IKVM.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.SHDocVw">
       <HintPath>..\packages\WatiN.2.0.50\lib\net40\Interop.SHDocVw.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -54,17 +76,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HtmlUnitBrowser.cs" />
+    <Compile Include="Interfaces\IBrowser.cs" />
+    <Compile Include="Interfaces\IQUnitParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\CommonAssemblyInfo.cs">
-      <Link>Properties\CommonAssemblyInfo.cs</Link>
-    </Compile>
     <Compile Include="NQUnit.cs" />
     <Compile Include="QUnitParser.cs" />
+    <Compile Include="QUnitParserFactory.cs" />
     <Compile Include="QUnitParserHelpers.cs" />
+    <Compile Include="QUnitParserHtmlUnit.cs" />
     <Compile Include="QUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NQUnit.snk" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

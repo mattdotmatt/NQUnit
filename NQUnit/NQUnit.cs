@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using NQUnit.Interfaces;
 
 namespace NQUnit
 {
@@ -25,9 +26,9 @@ namespace NQUnit
         /// </summary>
         /// <param name="filesToTest">A list of one or more files to run tests on relative to the root of the test project.</param>
         /// <returns>An array of QUnitTest objects encapsulating the QUnit tests in the given files</returns>
-        public static IEnumerable<QUnitTest> GetTests(params string[] filesToTest)
+        public static IEnumerable<QUnitTest> GetTests(IQUnitParser testRunner, params string[] filesToTest)
         {
-            return GetTests(-1, filesToTest);
+            return GetTests(testRunner,-1, filesToTest);
         }
 
         /// <summary>
@@ -36,7 +37,7 @@ namespace NQUnit
         /// <param name="maxWaitInMs">The maximum number of milliseconds before the tests should timeout after page load; -1 for infinity, 0 to not support asynchronous tests</param>
         /// <param name="filesToTest">A list of one or more files to run tests on relative to the root of the test project.</param>
         /// <returns>An array of QUnitTest objects encapsulating the QUnit tests in the given files</returns>
-        public static IEnumerable<QUnitTest> GetTests(int maxWaitInMs, params string[] filesToTest)
+        public static IEnumerable<QUnitTest> GetTests(IQUnitParser testRunner, int maxWaitInMs, params string[] filesToTest)
         {
             var waitHandle = new EventWaitHandle(false, EventResetMode.ManualReset);
             var tests = default(IEnumerable<QUnitTest>);
@@ -47,11 +48,9 @@ namespace NQUnit
             //  an STA thread in which to run the WatiN tests.
             var t = new Thread(() =>
             {
-                var qUnitParser = default(QUnitParser);
                 try
                 {
-                    qUnitParser = new QUnitParser(maxWaitInMs);
-                    tests = filesToTest.SelectMany(qUnitParser.GetQUnitTestResults).ToArray();
+                    tests = filesToTest.SelectMany(testRunner.GetQUnitTestResults).ToArray();
                 }
                 catch (Exception ex)
                 {
@@ -59,8 +58,8 @@ namespace NQUnit
                 }
                 finally
                 {
-                    if (qUnitParser != null)
-                        qUnitParser.Dispose();
+                    if (testRunner != null)
+                        testRunner.Dispose();
                     waitHandle.Set();
                 }
 

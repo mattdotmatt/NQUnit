@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]C:\Code\spikes\testing\NQUnit\NQunit.Tests\NQunit.Tests.nunit</TopNode>
+  <SelectedNode>[0-1000]C:\Code\spikes\testing\NQUnit\NQunit.Tests\NQunit.Tests.nunit</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\Code\spikes\testing\NQUnit\NQunit.Tests\NQunit.Tests.nunit" Expanded="true" />
+    <Node UniqueName="[0-1007]C:\Code\spikes\testing\NQUnit\NQunit.Tests\bin\Debug\NQunit.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1008]NQunit" Expanded="true" />
+    <Node UniqueName="[0-1009]NQunit.Tests" Expanded="true" />
+    <Node UniqueName="[0-1005]NQunit.Tests.HtmlUnitQUnitParserTests" Expanded="true" />
+    <Node UniqueName="[0-1001]NQunit.Tests.ParserFactoryTests" Expanded="true" />
+    <Node UniqueName="[0-1002]NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser" Expanded="true" />
+    <Node UniqueName="[0-1016]C:\Code\spikes\testing\NQUnit\NQunit.Tests\bin\Debug\NQunit.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1017]NQunit" Expanded="true" />
+    <Node UniqueName="[0-1018]NQunit.Tests" Expanded="true" />
+    <Node UniqueName="[0-1014]NQunit.Tests.HtmlUnitQUnitParserTests" Expanded="true" />
+    <Node UniqueName="[0-1010]NQunit.Tests.ParserFactoryTests" Expanded="true" />
+    <Node UniqueName="[0-1011]NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser" Expanded="true" />
+  </Nodes>
+</VisualState>

@@ -7,13 +7,14 @@ using System.Threading;
 using System.Xml.Linq;
 using WatiN.Core;
 using WatiN.Core.Native.Windows;
+using NQUnit.Interfaces;
 
 namespace NQUnit
 {
     /// <summary>
     /// The class that takes care of firing an IE session using WatiN and parsing the DOM of the page to extract the QUnit information.
     /// </summary>
-    public class QUnitParser : IDisposable
+    public class QUnitParser : IQUnitParser
     {
         private readonly int _maxWaitInMs;
         private readonly IE _ie;
@@ -129,5 +130,15 @@ namespace NQUnit
         {
             _ie.Close();
         }
+
+        #region IQUnitParser Members
+
+
+        public string ParserType
+        {
+            get { return "watin"; }
+        }
+
+        #endregion
     }
 }

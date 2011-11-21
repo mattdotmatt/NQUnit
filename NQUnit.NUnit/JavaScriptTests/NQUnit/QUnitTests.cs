@@ -17,7 +17,8 @@ namespace NQUnit.NUnit.JavaScriptTests.NQUnit
         public IEnumerable<QUnitTest> GetQUnitTests()
         {
             var testsDirectory = Path.Combine(Environment.CurrentDirectory, "JavaScriptTests");
-            return global::NQUnit.NQUnit.GetTests(Directory.GetFiles(testsDirectory, "*.html"));
+            var watinTestRunner = new QUnitParserFactory().CreateParser(500, "watin");
+            return global::NQUnit.NQUnit.GetTests(watinTestRunner,Directory.GetFiles(testsDirectory, "*.html"));
         }
     }
 }
