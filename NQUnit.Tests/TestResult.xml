@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Code\spikes\testing\NQUnit\NQunit.Tests\NQunit.Tests.nunit" total="6" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-11-21" time="14:28:17">
+<test-results name="C:\Code\spikes\testing\NQUnit\NQunit.Tests\NQunit.Tests.nunit" total="6" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-11-22" time="13:01:25">
   <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5448" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0" machine-name="DEVMYOUNG001" user="matthew.young" user-domain="TSO" />
   <culture-info current-culture="en-GB" current-uiculture="en-US" />
-  <test-suite type="Project" name="C:\Code\spikes\testing\NQUnit\NQunit.Tests\NQunit.Tests.nunit" executed="True" result="Success" success="True" time="25.892" asserts="0">
+  <test-suite type="Project" name="C:\Code\spikes\testing\NQUnit\NQunit.Tests\NQunit.Tests.nunit" executed="True" result="Success" success="True" time="19.426" asserts="0">
     <results>
-      <test-suite type="Assembly" name="C:\Code\spikes\testing\NQUnit\NQunit.Tests\bin\Debug\NQunit.Tests.dll" executed="True" result="Success" success="True" time="20.270" asserts="0">
+      <test-suite type="Assembly" name="C:\Code\spikes\testing\NQUnit\NQunit.Tests\bin\Debug\NQunit.Tests.dll" executed="True" result="Success" success="True" time="14.206" asserts="0">
         <results>
-          <test-suite type="Namespace" name="NQunit" executed="True" result="Success" success="True" time="20.270" asserts="0">
+          <test-suite type="Namespace" name="NQunit" executed="True" result="Success" success="True" time="14.206" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="20.269" asserts="0">
+              <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="14.206" asserts="0">
                 <results>
-                  <test-suite type="TestFixture" name="HtmlUnitQUnitParserTests" executed="True" result="Success" success="True" time="14.486" asserts="0">
+                  <test-suite type="TestFixture" name="HtmlUnitQUnitParserTests" executed="True" result="Success" success="True" time="11.594" asserts="0">
                     <results>
-                      <test-case name="NQunit.Tests.HtmlUnitQUnitParserTests.WhenAPageWithResultsIsReturnedTheResultsShouldBeExtracted" executed="True" result="Success" success="True" time="14.457" asserts="10" />
+                      <test-case name="NQunit.Tests.HtmlUnitQUnitParserTests.WhenAPageWithResultsIsReturnedTheResultsShouldBeExtracted" executed="True" result="Success" success="True" time="11.584" asserts="10" />
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="ParserFactoryTests" executed="True" result="Success" success="True" time="5.745" asserts="0">
+                  <test-suite type="TestFixture" name="ParserFactoryTests" executed="True" result="Success" success="True" time="2.606" asserts="0">
                     <results>
-                      <test-suite type="ParameterizedTest" name="ParserFactoryShouldReturnTheCorrectParser" executed="True" result="Success" success="True" time="5.744" asserts="0">
+                      <test-suite type="ParameterizedTest" name="ParserFactoryShouldReturnTheCorrectParser" executed="True" result="Success" success="True" time="2.605" asserts="0">
                         <properties>
                           <property name="APARTMENT_STATE" value="STA" />
                         </properties>
                         <results>
-                          <test-case name="NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser(&quot;watin&quot;)" executed="True" result="Success" success="True" time="5.736" asserts="2" />
-                          <test-case name="NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser(&quot;htmlunit&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                          <test-case name="NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser(&quot;watin&quot;)" executed="True" result="Success" success="True" time="2.598" asserts="2" />
+                          <test-case name="NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser(&quot;htmlunit&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="2" />
                         </results>
                       </test-suite>
                     </results>
@@ -35,25 +35,25 @@
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="Assembly" name="C:\Code\spikes\testing\NQUnit\NQunit.Tests\bin\Debug\NQunit.Tests.dll" executed="True" result="Success" success="True" time="5.605" asserts="0">
+      <test-suite type="Assembly" name="C:\Code\spikes\testing\NQUnit\NQunit.Tests\bin\Debug\NQunit.Tests.dll" executed="True" result="Success" success="True" time="5.206" asserts="0">
         <results>
-          <test-suite type="Namespace" name="NQunit" executed="True" result="Success" success="True" time="5.605" asserts="0">
+          <test-suite type="Namespace" name="NQunit" executed="True" result="Success" success="True" time="5.205" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="5.605" asserts="0">
+              <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="5.205" asserts="0">
                 <results>
-                  <test-suite type="TestFixture" name="HtmlUnitQUnitParserTests" executed="True" result="Success" success="True" time="5.011" asserts="0">
+                  <test-suite type="TestFixture" name="HtmlUnitQUnitParserTests" executed="True" result="Success" success="True" time="5.009" asserts="0">
                     <results>
-                      <test-case name="NQunit.Tests.HtmlUnitQUnitParserTests.WhenAPageWithResultsIsReturnedTheResultsShouldBeExtracted" executed="True" result="Success" success="True" time="5.010" asserts="10" />
+                      <test-case name="NQunit.Tests.HtmlUnitQUnitParserTests.WhenAPageWithResultsIsReturnedTheResultsShouldBeExtracted" executed="True" result="Success" success="True" time="5.009" asserts="10" />
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="ParserFactoryTests" executed="True" result="Success" success="True" time="0.589" asserts="0">
+                  <test-suite type="TestFixture" name="ParserFactoryTests" executed="True" result="Success" success="True" time="0.193" asserts="0">
                     <results>
-                      <test-suite type="ParameterizedTest" name="ParserFactoryShouldReturnTheCorrectParser" executed="True" result="Success" success="True" time="0.588" asserts="0">
+                      <test-suite type="ParameterizedTest" name="ParserFactoryShouldReturnTheCorrectParser" executed="True" result="Success" success="True" time="0.192" asserts="0">
                         <properties>
                           <property name="APARTMENT_STATE" value="STA" />
                         </properties>
                         <results>
-                          <test-case name="NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser(&quot;watin&quot;)" executed="True" result="Success" success="True" time="0.559" asserts="2" />
+                          <test-case name="NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser(&quot;watin&quot;)" executed="True" result="Success" success="True" time="0.179" asserts="2" />
                           <test-case name="NQunit.Tests.ParserFactoryTests.ParserFactoryShouldReturnTheCorrectParser(&quot;htmlunit&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="2" />
                         </results>
                       </test-suite>
