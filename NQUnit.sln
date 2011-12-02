@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NQUnit.MSTest", "NQUnit.MST
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NQUnit.Tests", "NQUnit.Tests\NQUnit.Tests.csproj", "{2235139E-C908-4183-B395-9285FF217202}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NQUnit.MSTest.Example", "NQUnit.MSTest.Example\NQUnit.MSTest.Example.csproj", "{B5BA8FEA-2789-401E-BA9C-154FE33AB77F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{2235139E-C908-4183-B395-9285FF217202}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2235139E-C908-4183-B395-9285FF217202}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2235139E-C908-4183-B395-9285FF217202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5BA8FEA-2789-401E-BA9C-154FE33AB77F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BA8FEA-2789-401E-BA9C-154FE33AB77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BA8FEA-2789-401E-BA9C-154FE33AB77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BA8FEA-2789-401E-BA9C-154FE33AB77F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

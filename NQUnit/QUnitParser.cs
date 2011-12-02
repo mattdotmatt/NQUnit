@@ -61,13 +61,16 @@ namespace NQUnit
 
             while (stillRunning && wait <= _maxWaitInMs)
             {
-                testOl = _ie.Elements.Filter(Find.ById("qunit-tests"))[0];
-                if (testOl == null) yield break;
-                documentRoot = XDocument.Load(new StringReader(MakeXHtml(testOl.OuterHtml))).Root;
-                if (documentRoot == null) yield break;
+                var elementCollection = _ie.Elements.Filter(Find.ById("qunit-tests"));
+                if (elementCollection.Count != 0)
+                {
+                    testOl = elementCollection[0];
+                    if (testOl == null) yield break;
+                    documentRoot = XDocument.Load(new StringReader(MakeXHtml(testOl.OuterHtml))).Root;
+                    if (documentRoot == null) yield break;
 
-                stillRunning = documentRoot.Elements().Any(e => e.Attributes().First(x => x.Name.Is("class")).Value == "running");
-
+                    stillRunning = documentRoot.Elements().Any(e => e.Attributes().First(x => x.Name.Is("class")).Value == "running");
+                }
                 if (stillRunning && wait < _maxWaitInMs) Thread.Sleep(wait + 100 > _maxWaitInMs ? _maxWaitInMs - wait : 100);
                 wait += 100;
             }
